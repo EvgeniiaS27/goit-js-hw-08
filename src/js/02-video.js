@@ -13,7 +13,6 @@ function onTimeUpdatePlayer(e) {
 }
 
 const storageTime = localStorage.getItem(STORAGE_KEY);
-console.log(storageTime);
 
 player.setCurrentTime(storageTime).catch(function (error) {
   switch (error.name) {
